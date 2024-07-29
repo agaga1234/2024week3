@@ -107,31 +107,26 @@ a {
 }
 
 .option-list li {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  width: 33.3333%;
+  text-align: center;
 }
 
 .option-list a {
-  padding: 24px 120px;
   font-size: 32px;
   font-weight: 500;
   color: #000;
   border-left: 1px solid #dcdcdc;
   border-right: 1px solid #dcdcdc;
+  padding: 24px;
+  display: block;
 }
 @media (max-width: 769px) {
-  .option-list li {
-    margin-top: 18px;
-    margin-bottom: 18px;
-  }
   .option-list a {
-    padding: 18px 60px;
     font-size: 24px;
   }
 }
 @media (max-width: 577px) {
   .option-list a {
-    padding: 18px 50px;
     font-size: 16px;
   }
 }
@@ -244,20 +239,19 @@ h2 {
   color: #555555;
   font-size: 19px;
 }
-
-.page-d a:hover {
-  background-color: #f2f2f2;
-}
-
-.page-d a:active {
-  background-color: black;
-  color: white;
-}
-
 .page-text {
   padding: 11px 12px;
   border: 1px solid #555555;
   color: #555555;
+}
+.page-d a:active,
+.page-active {
+  background-color: black;
+  color: white;
+}
+
+.page-d a:hover {
+  background-color: #f2f2f2;
 }
 
 /* footer */
@@ -301,13 +295,13 @@ h2 {
   margin-bottom: 36px;
 }
 
-.footer-phone p {
+.footer-phone a {
   font-size: 32px;
   color: white;
   margin-left: 20px;
   font-weight: 300;
 }
-.footer-mail p {
+.footer-mail a {
   font-size: 32px;
   color: white;
   margin-left: 20px;
